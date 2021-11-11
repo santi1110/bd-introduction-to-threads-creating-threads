@@ -20,17 +20,14 @@ printed. The sorting and printing should happen in a new thread, which is starte
 
 The steps that need to be completed are as follows:
 
-1. Run `rde wflow run introthreads-prework-creatingthreads-warehouseapp` and save the output.
-2. `DeliveryManager` needs a `Runnable` interface. 
-3. Complete the `run()` method in  `DeliveryManager` so it handles the sorting and printing. The
-   constructor of `DeliveryManager`  should only initialize the lists.
-4. In `WarehouseApp`, complete `startDeliveryThread()`, which starts up the thread. `main` should
-   only contain the printout line and a call to `startDeliveryThread()`.
-5. Re-run `rde wflow run introthreads-prework-creatingthreads-warehouseapp` and verify that the
-   new output matches the output from step 1.
+1. `DeliveryManager` needs a `Runnable` interface. 
+2. Complete the `run()` method in  `DeliveryManager`  to handle the sorting and printing. The constructor of
+    `DeliveryManager`  should only have code initializing the lists.
+3. In `WarehouseApp`, complete `startDeliveryThread()` to start up the thread. `main` should only have the printout
+    line and a method call to `startDeliveryThread()`.
 
-
+Some method calls may need to be moved around. The output should be the same after adding threads, so check what it
+looks like before starting to code.
 
 HINTS:
-You may need to move around some method calls to have the output in step 5 match that of step 1.
 * [I don't know what code to move?](hints/hint-01.md)
