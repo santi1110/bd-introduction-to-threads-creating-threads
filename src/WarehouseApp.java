@@ -1,7 +1,3 @@
-package com.amazon.ata.introthreads.prework.creatingthreads;
-
-import com.amazon.ata.introthreads.prework.creatingthreads.resources.DeliveryTruck;
-import com.amazon.ata.introthreads.prework.creatingthreads.resources.WarehousePackage;
 
 import java.util.List;
 

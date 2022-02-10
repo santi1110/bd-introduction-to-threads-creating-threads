@@ -1,11 +1,5 @@
 ### Creating Threads.
 
-**Branch name:** introthreads-prework
-
-**RDE workfows:**
-* `rde wflow run introthreads-prework-creatingthreads-warehouseapp`
-* `rde wflow run introthreads-prework-creatingthreads-warehouseapptest`
-
 Expected time required: 15 min
 
 We are developing software that is sorting packages in an Amazon warehouse. We have a main thread in
@@ -20,14 +14,13 @@ printed. The sorting and printing should happen in a new thread, which is starte
 
 The steps that need to be completed are as follows:
 
-1. Run `rde wflow run introthreads-prework-creatingthreads-warehouseapp` and save the output.
+1. Run `WarehouseAppTest` and save the output.
 2. `DeliveryManager` needs a `Runnable` interface. 
 3. Complete the `run()` method in  `DeliveryManager` so it handles the sorting and printing. The
    constructor of `DeliveryManager`  should only initialize the lists.
 4. In `WarehouseApp`, complete `startDeliveryThread()`, which starts up the thread. `main` should
    only contain the printout line and a call to `startDeliveryThread()`.
-5. Re-run `rde wflow run introthreads-prework-creatingthreads-warehouseapp` and verify that the
-   new output matches the output from step 1.
+5. Re-run `WarehouseAppTest` and verify that the new output matches the output from step 1.
 
 
 
